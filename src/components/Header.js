@@ -1,6 +1,6 @@
 import React from 'react';
 import CV from './CV';
-import me from '../assets/me.jpg';
+import me from '../assets/me.png';
 import HeaderSocials from './HeaderSocials';
 import styled from 'styled-components';
 
@@ -10,7 +10,7 @@ function Header() {
       <HeaderContainer className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Otmane Aatik</h1>
-        <h5 classeName="text-light">Fullstack Developer</h5>
+        <h5 className="text-light">Fullstack Developer</h5>
         <CV />
         <HeaderSocials />
 
@@ -53,9 +53,6 @@ const Image = styled.div`
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
-  img {
-    //background-color: transparent;
-  }
 `
 
 
