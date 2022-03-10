@@ -27,7 +27,7 @@ function Header() {
 
 const Container = styled.div`
   height: 100%;
-  padding-top: 7rem;
+  padding-top: 5rem;
   overflow: hidden;
 `;
 const HeaderContainer = styled.div`
