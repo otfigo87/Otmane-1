@@ -54,8 +54,22 @@ const AboutContainer = styled.div`
   grid-template-columns: 35% 50%;
   gap: 15%;
   p {
-    margin: 2rem 0 2.6rem;
+    margin: 2.5rem 0 2.5rem;
     color: var(--color-light);
+    @media screen and (max-width: 1024px) {
+      margin: 2rem 0 1.5rem;
+    }  
+    };
+  };
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  };
+  .about__content {
+    @media screen and (max-width: 600px) {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
   }
 `;
 
@@ -66,6 +80,14 @@ const AboutMe = styled.div`
   background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
   display: grid;
   place-items: center;
+  @media screen and (max-width: 600px) {
+    width: 65%;
+    margin: 0 auto 3rem;
+  };
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
 `;
 
 const AboutMeImage = styled.div`
@@ -84,6 +106,10 @@ const AboutCards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 `;
 const AboutCard = styled.div`
   background: var(--color-bg-variant);
