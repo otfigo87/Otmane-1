@@ -81,6 +81,13 @@ function Experience() {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="icon"/>
+              <div>
+                <h4>PHP</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
            </ExperienceContent>
          </div>
       </ExperienceContainer>
@@ -98,6 +105,15 @@ const ExperienceContainer = styled.div`
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+  @media screen and (max-width: 1024px){
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  };
+  @media screen and (max-width: 600px){
+    width: 95%;
+    padding: 2rem 1rem;
+  }
   };
   > div:hover {
     background: transparent;
@@ -110,7 +126,13 @@ const ExperienceContainer = styled.div`
   };
   h3:hover {
     color: white;
-  }
+  };
+@media screen and (max-width: 1024px){
+  grid-template-columns: 1fr;
+};
+@media screen and (max-width: 600px) {
+  gap: 1rem;
+}
 `;
 
 const ExperienceContent = styled.div`
@@ -124,6 +146,9 @@ const ExperienceContent = styled.div`
   .icon {
     margin-top: 6px;
     color: var(--color-primary);
+  }
+@media screen and (max-width: 1024px){
+    padding: 1 rem;
   }
 `;
 

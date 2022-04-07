@@ -53,6 +53,9 @@ const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  @media screen and (max-width: 600px){
+    width: 95%;
+  };
   p {
     margin: 2.5rem 0 2.5rem;
     color: var(--color-light);
